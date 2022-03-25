@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    
+    font-family: ubuntu;
+}
+body{
+    background-image: url('images/nvlleAnnee.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap; 
+    color: white; 
+}
+body::after{
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+}
+body *{
+    z-index:1;
+}
+
+h1{
+    font-size: 67px; 
+    font-weight: bolder;
+    margin: -80px 0 40px ;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+/* .container-fluid{
+    display: flex;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); 
+    
+} */
+.contener{
+    display: flex;
+    transform: scale(2);
+    backdrop-filter: blur(8px);
+    padding: 50px 80px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    position: relative; 
+    
+}
+#temps{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 15px;
+}
+#temps h2{
+    margin: 0 0 5px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+#annee{
+    position: absolute;
+    z-index: -1;
+    font-size: 180px;
+    font-style: normal;
+    bottom: 8%; 
+    left: 50%;  
+    transform: translateX(-50%);   
+   
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+    h1{
+        display: flex;
+        font-size: 40px;
+        color: red;
+        text-align: center;
+        justify-content: center;
+        top: 45%;
+    }
+    #temps{
+        margin: 3px;
+        display: table-column;
+    }
+    #temps h2{
+        margin: 0;
+        font-size: 12px;
+
+    }
+    #temps small{
+        font-size: 10px;
+    }
+    #annee{
+        position: absolute;
+        font-size: 80px;
+        font-style: normal;
+        color: tomato;
+        bottom: 8%; 
+        left: 50%;  
+        transform: translateX(-50%);   
+    }
+
+
+}
