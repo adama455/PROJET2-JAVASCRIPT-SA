@@ -6,25 +6,25 @@ allBtn.forEach(button => {
         switch (button.innerText) {
             case 'Notification Success':
                message(divMessage=document.createElement('div'));
-                divMessage.style.backgroundColor='#28a745';
+               divMessage.className ='btn1';
                 divMessage.innerText=('Mon Projet 1')
                 break;
             case 'Notification Danger':
                 message(divMessage=document.createElement('div'));
-                divMessage.style.backgroundColor='#dc3545';
+                divMessage.className='btn2';
                 divMessage.innerText=('Mon Projet 2')
 
                 
             break;
             case 'Notification Warning':
                message(divMessage=document.createElement('div'));
-               divMessage.style.backgroundColor='#ffc107';
+               divMessage.className='btn3';
                divMessage.innerText=('Mon Projet 3')
 
             break;
             case 'Notification Info':
                 message(divMessage=document.createElement('div'));
-                divMessage.style.backgroundColor='#17a2b8 ';
+                divMessage.className='btn4';
                 divMessage.innerText=('Mon Projet 4')
                 
                 break;
@@ -35,7 +35,7 @@ allBtn.forEach(button => {
 });
 function message(divMessage=document.createElement('div')){
     // divMessage.innerText=('Mon Projet ');
-    divMessage.setAttribute('class','message');
+    divMessage.id='message';
     conteneur.appendChild(divMessage);
     setTimeout(() => {
         divMessage.remove(divMessage);
