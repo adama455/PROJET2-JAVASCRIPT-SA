@@ -471,7 +471,6 @@ const tableMenu=[
 
 function menuBadge() {
     const divPart=document.createElement('div'); 
-
     const div1= document.createElement('div');    
         const parIcone2Badge = document.createElement('div'); 
         const divIcon1= document.createElement('i');  
@@ -499,21 +498,16 @@ function menuBadge() {
         divIcon1.classList.toggle('icon-pilier');
 
     });
+
+    // menu.addEventListener('click',function (e) {
+    //     parIcone2Badge.classList.remove('show_cacher-menu')
+    //     divIcon1.classList.remove('show-icon-pilier');
+    // });
+
    
     div1.addEventListener('mouseover',()=>divPart.classList.toggle("dashboard-over"));
     div1.addEventListener('click',()=>div1.classList.toggle("dashboard-active"));
-    // menu.addEventListener('mouseover',function(){
-    //     menu.className='';
-    //     parIcone2Badge.className='';
-    //     textImage1.className='';
-    //     textImage2.className='';
-    //     image[0].className='';
-    //     image[1].className='';
-    //     recherche.className='';
-    //     utilisateur[0].className='';
-    //     iconMenu.className='';
-    //     // divIcon1.className='';
-    // })
+   
     return divPart;
 }
 

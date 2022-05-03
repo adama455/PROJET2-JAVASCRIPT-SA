@@ -200,20 +200,24 @@ ul{
     font-size: 35px;
     flex: 2;
 }
+
 .menu-aside-plier{
     width: 4%;
     /* position: relative; */
-
+}
+.menu-aside-deplier{
+    width: 14%;
+    /* position: relative; */
 }
 .icon-pilier{
     font-size: 25px;
     margin: 15% 0 0 25%;
-
 }
 
 .text-mage1, .text-mage2{
     opacity: 0;
 }
+
 .image-plier{
    transform: scale(2.5);
    position: absolute;
